@@ -1,0 +1,23 @@
+{
+  "name": "school-project",
+  "version": "0.0.1",
+  "description": "",
+  "main": "main.js",
+  "scripts": { 
+    "start": "electron .",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/salamander-r/school-project.git"
+  },
+  "author": "salamander-r",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/salamander-r/school-project/issues"
+  },
+  "homepage": "https://github.com/salamander-r/school-project#readme",
+  "devDependencies": {
+    "electron": "^31.3.1"
+  }
+}
