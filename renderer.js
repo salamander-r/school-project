@@ -1,7 +1,8 @@
 const ctx = document.getElementById('myChart');
 const button = document.getElementById('submit');
 let sinChart = null;
-button.onclick = () => {
+
+const handleClick = () => {
     if (sinChart !== null) {
         sinChart.destroy();
     }
@@ -21,3 +22,11 @@ button.onclick = () => {
         }
     });
 };
+
+button.onclick = handleClick;
+
+document.onkeypress = (e) => {
+    if(e.keyCode === 13) {
+        handleClick();
+    }
+}
