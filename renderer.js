@@ -10,6 +10,7 @@ const handleClick = () => {
     const x0 = parseInt(document.getElementById('x0').value);
     const xn = parseInt(document.getElementById('xn').value);
     const A = parseFloat(document.getElementById('a').value) || 1;
+    const deltaX = parseInt(document.getElementById('deltaX').value);
 
     function Choice(x) {
         const mathFunctions = Functions;
@@ -26,7 +27,7 @@ const handleClick = () => {
 
     const points = [];
     for (let x = x0; x < xn; x += 0.25) {
-        points.push({ x: `${x}`, y: `${Choice(x) * A}` });
+        points.push({ x: `${x}`, y: `${Choice(x + deltaX) * A}` });
     }
 
     const initialPoints = [];
