@@ -2,19 +2,21 @@
 <html>
 <head>
     <meta charset="UTF-8">
-    <title>School project</title>
+    <title>Trigonometry simulator</title>
     <!-- <meta http-equiv="Content-Security-Policy" content="script-src 'self' 'unsafe-inline';" /> -->
 </head>
 <body>
-    <h1>School project</h1>
+    <h1>Тренажер з тригонометрії</h1>
     <p>
         We are using Node.js <span id="node-version"></span>,
         Chromium <span id="chrome-version"></span>,
         and Electron <span id="electron-version"></span>.
     </p>
-    <input type="text" name="x0" id="x0" />
-    <input type="text" name="xn" id="xn" />
-    <button id="submit">Go</button>
+    <input type="string" name="Functions" id="Functions" placeholder="Functions" value="sin" />
+    <input type="number" name="x0" id="x0" placeholder="x0" value="0" />
+    <input type="number" name="xn" id="xn" placeholder="xn" value="15" />
+    <input type="number" name="a" id="a" placeholder="a" value="2.5" />
+    <button id="submit">Enter</button>
     <canvas id="myChart"></canvas>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.1/chart.umd.js"></script>
     <script src="./renderer.js"></script>
