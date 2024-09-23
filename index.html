@@ -7,18 +7,26 @@
 </head>
 <body>
     <h1>Тренажер з тригонометрії</h1>
+    <button id="showCharts">Графіки</button>
+    <button id="showCircle">Одиничне коло</button>
     <p>
         We are using Node.js <span id="node-version"></span>,
         Chromium <span id="chrome-version"></span>,
         and Electron <span id="electron-version"></span>.
     </p>
-    <input type="string" name="Functions" id="Functions" placeholder="Functions" value="sin" />
-    <input type="number" name="x0" id="x0" placeholder="x0" value="0" />
-    <input type="number" name="xn" id="xn" placeholder="xn" value="15" />
-    <input type="number" name="a" id="a" placeholder="a" value="2.5" />
-    <input type="number" name="deltaX" id="deltaX" placeholder="Зміщення по осі Х" value="0" />
-    <button id="submit">Enter</button>
-    <canvas id="myChart"></canvas>
+    <div id="charts">
+        <input type="string" name="Functions" id="Functions" placeholder="Functions" value="sin" />
+        <input type="number" name="x0" id="x0" placeholder="x0" value="0" />
+        <input type="number" name="xn" id="xn" placeholder="xn" value="15" />
+        <input type="number" name="a" id="a" placeholder="a" value="2.5" />
+        <input type="number" name="deltaX" id="deltaX" placeholder="Зміщення по осі Х" value="0" />
+        <input type="number" name="deltaY" id="deltaY" placeholder="Зміщення по осі Y" value="0" />
+        <button id="submit">Enter</button>
+        <canvas id="myChart"></canvas>
+    </div>
+    <div id="circle">
+        circles
+    </div>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.1/chart.umd.js"></script>
     <script src="./renderer.js"></script>
 </body>

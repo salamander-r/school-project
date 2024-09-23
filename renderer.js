@@ -1,3 +1,17 @@
+const chartsSection = document.getElementById('charts');
+const circleSection = document.getElementById('circle');
+const showChartsButton = document.getElementById('showCharts');
+const showCircleButton = document.getElementById('showCircle');
+showChartsButton.onclick = () => {
+    chartsSection.style.display = 'block';
+    circleSection.style.display = 'none';
+}
+
+showCircleButton.onclick = () => {
+    chartsSection.style.display = 'none';
+    circleSection.style.display = 'block';
+}
+
 const ctx = document.getElementById('myChart');
 const button = document.getElementById('submit');
 let sinChart = null;
@@ -11,6 +25,7 @@ const handleClick = () => {
     const xn = parseInt(document.getElementById('xn').value);
     const A = parseFloat(document.getElementById('a').value) || 1;
     const deltaX = parseInt(document.getElementById('deltaX').value);
+    const deltaY = parseInt(document.getElementById('deltaY').value);
 
     function Choice(x) {
         const mathFunctions = Functions;
@@ -27,7 +42,7 @@ const handleClick = () => {
 
     const points = [];
     for (let x = x0; x < xn; x += 0.25) {
-        points.push({ x: `${x}`, y: `${Choice(x + deltaX) * A}` });
+        points.push({ x: `${x}`, y: `${Choice(x + deltaX) * A + deltaY}` });
     }
 
     const initialPoints = [];
