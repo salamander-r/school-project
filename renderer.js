@@ -28,12 +28,12 @@
         }
 
         const points = [];
-        for (let x = x0; x < xn; x += 0.25) {
+        for (let x = x0; x < xn; x += Math.PI / 12) {
             points.push({ x: `${x}`, y: `${Choice(x + deltaX) * A + deltaY}` });
         }
 
         const initialPoints = [];
-        for (let x = x0; x < xn; x += 0.25) {
+        for (let x = x0; x < xn; x += Math.PI / 12) {
             initialPoints.push({ x: `${x}`, y: `${Choice(x)}` });
         }
 
@@ -44,7 +44,45 @@
                     { data: initialPoints, label: 'Початковий', pointRadius: 0 },
                     { data: points, label: 'Модифікований', pointRadius: 0 }
                 ]
-            }
+            },
+            options: {
+                scales: {
+                  x: {
+                    ticks: {
+                      callback: function (value) {
+                        const trueValue = parseFloat(this.getLabelForValue(value));
+        
+                        if (Math.abs(trueValue - Math.PI / 6) < 0.01) {
+                            return 'π/6';
+                        }
+
+                        if (Math.abs(trueValue - Math.PI / 3) < 0.01) {
+                            return 'π/3';
+                        }
+
+                        if (Math.abs(trueValue - Math.PI / 2) < 0.01) {
+                            return 'π/2';
+                        }
+
+                        if (Math.abs(trueValue - Math.PI) < 0.01) {
+                            return 'π';
+                        }
+
+                        if (Math.abs(trueValue - 3 * Math.PI / 2) < 0.01) {
+                            return '3π/2';
+                        }
+
+                        if (Math.abs(trueValue - 2 * Math.PI) < 0.01) {
+                            return '2π';
+                        }
+        
+                        return "";
+                      },
+                    },
+                  },
+                },
+              },
+        
         });
     };
 
