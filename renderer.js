@@ -41,8 +41,8 @@
             type: 'line',
             data: {
                 datasets: [
-                    { data: initialPoints, label: 'Початковий' },
-                    { data: points, label: 'Модифікований' }
+                    { data: initialPoints, label: 'Початковий', pointRadius: 0 },
+                    { data: points, label: 'Модифікований', pointRadius: 0 }
                 ]
             }
         });
