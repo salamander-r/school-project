@@ -23,8 +23,11 @@
                 }]
             },
             options: {
-                aspectRatio: 1
+                aspectRatio: 1,
                 // responsive: false
+                animation: {
+                    duration: 0, // Disable initial animation
+                },          
             }
         });
         // circleChart.resize(600, 600);
