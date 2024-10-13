@@ -48,6 +48,10 @@
             options: {
                 scales: {
                   x: {
+                    title: {
+                        display: true,
+                        text: 'X' // Назва осі X
+                    },
                     ticks: {
                       callback: function (value) {
                         const trueValue = parseFloat(this.getLabelForValue(value));
@@ -80,9 +84,14 @@
                       },
                     },
                   },
-                },
+                  y: {
+                    title: {
+                        display: true,
+                        text: 'Y' // Назва осі Y
+                    },
+                  }
               },
-        
+            }
         });
     };
 
