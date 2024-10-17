@@ -50,7 +50,7 @@
                   x: {
                     title: {
                         display: true,
-                        text: 'X' // Назва осі X
+                        text: 'x' // Назва осі X
                     },
                     ticks: {
                       callback: function (value) {
@@ -87,10 +87,10 @@
                   y: {
                     title: {
                         display: true,
-                        text: 'Y' // Назва осі Y
+                        text: 'y' // Назва осі Y
                     },
                   }
-              },
+                },
             }
         });
     };
