@@ -22,24 +22,36 @@
                 datasets: [{
                     data: points,
                     label: 'Коло',
-                    pointRadius: 0
+                    pointRadius: 0,
+                    borderColor: 'grey'
                 },
                 {
                     data: [{ x: "-1", y: "0"}, { x: "1", y: "0"}],
                     label: 'X',
-                    pointRadius: 0
+                    pointRadius: 0,
+                    borderColor: 'grey'
                 },
                 {
                     data: [{ x: "0", y: "-1"}, { x: "0", y: "1"}],
                     label: 'Y',
-                    pointRadius: 0
+                    pointRadius: 0,
+                    borderColor: 'grey'
                 },
                 {
                     data: [{ x: "0", y: `${round2(Math.sin(angleRadians))}`}, 
                            { x: `${round2(Math.cos(angleRadians))}`, y: `${round2(Math.sin(angleRadians))}`}, 
                            { x: `${round2(Math.cos(angleRadians))}`, y: "0"}],
                     label: 'Проекції',
-                    pointRadius: 0
+                    pointRadius: 0,
+                    borderColor: 'red',
+                    borderDash: [10, 8]
+                },
+                {
+                    data: [{ x: "0", y: "0" }, 
+                           { x: `${round2(Math.cos(angleRadians))}`, y: `${round2(Math.sin(angleRadians))}`}],
+                    label: 'Кут',
+                    // pointRadius: 0,
+                    borderColor: 'red'
                 }]
             },
             options: {
