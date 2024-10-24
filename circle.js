@@ -5,7 +5,11 @@
     const round = (x) => Math.round(x * 10000) / 10000;
     const round2 = (x) => Math.round(x * 100) / 100;
     const handleClick = () => {
-        const angleRadians = Math.PI/4;
+        if (circleChart !== null) {
+            circleChart.destroy();
+        }
+        const angle = parseInt(document.getElementById('angle').value);
+        const angleRadians = angle * Math.PI / 180;
         const points = [];
         for (let x = -1; x <= 1; x += 0.01) {
             points.push({ x: `${round(x)}`, y: `${round(Math.sqrt(1 - x * x))}` });
