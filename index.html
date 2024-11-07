@@ -16,12 +16,17 @@
     <button id="showCharts">Графіки</button>
     <button id="showCircle">Одиничне коло</button>
     <button id="showTests">Тести</button>
-    <p>
+    <!-- <p>
         We are using Node.js <span id="node-version"></span>,
         Chromium <span id="chrome-version"></span>,
         and Electron <span id="electron-version"></span>.
-    </p>
+    </p> -->
     <div id="charts">
+        <br/>
+        <b>Цей розділ присвячений графікам y=sinx/y=cosx. 
+           Тут ви можете попрактикуватись з побудовою синусоїда та косинусоїда.
+        </b>
+        <br/>
         <input type="string" name="Functions" id="Functions" placeholder="Functions" value="sin" />
         <input type="number" name="x0" id="x0" placeholder="x0" value="0" />
         <input type="number" name="xn" id="xn" placeholder="xn" value="15" />
@@ -32,12 +37,22 @@
         <canvas id="myChart"></canvas>
     </div>
     <div id="circle"  class="circle-chart-container">
+        <br/>
+        <b>Цей розділ присвячений побудові кутів на одиничном колі.
+           Візуальне зображення кутів сприяє кращому розумінню одиночного кола.
+        </b>
+        <br/>
         <input type="number" name="angle" id="angle" placeholder="Кут" value="45" />
         <button id="submitCircle">Enter</button>
         <canvas id="myCircle"></canvas>
     </div>
     <div id="tests">
-        Для закріплення матеріалу з теми Тригонометрія пропонуємо виконати тестове завдання
+        <br/>
+        <b>
+            Для закріплення матеріалу з теми Тригонометрія пропонуємо виконати тестове завдання
+        </b>
+        <br/>
+        <br/>
         <div id="test-question"></div>
         <button id="next-question" disabled>Next</button>
     </div>
