@@ -1,11 +1,19 @@
 (function () {
     const testQuestionSection = document.getElementById("test-question");
     const nextQuestionButton = document.getElementById("next-question");
+    const questionStatus = document.getElementById("question-status");
+    const correct = '✅';
+    const incorrect = '❌';
     const tests = [
         {
             type: "input",
             question: "Переведіть PI/4 у градуси:",
             answer: "45"
+        },
+        {
+            type: "input",
+            question: "Переведіть PI/6 у градуси:",
+            answer: "30"
         }
     ]
 
@@ -23,10 +31,10 @@
 
         button.onclick = () => {
             if (input.value === expectedAnswer) {
-              alert("Correct");
+              questionStatus.innerText = correct;
               nextQuestionButton.removeAttribute('disabled');
             } else {
-              alert("Wrong answer");
+                questionStatus.innerText = incorrect;
               nextQuestionButton.setAttribute("disabled", true);
             }
         };
@@ -37,5 +45,18 @@
     }
 
     nextQuestionButton.setAttribute("disabled", true);
-    setTestType1(tests[0].question, tests[0].answer);
+    let i = 0;
+
+    setTestType1(tests[i].question, tests[i].answer);
+    nextQuestionButton.onclick = () => {
+        if (i >= tests.length - 1) {
+            questionStatus.innerText = 'You finished all tests';
+            return;
+        }
+        i++;
+        clearDiv();
+        setTestType1(tests[i].question, tests[i].answer);
+        nextQuestionButton.setAttribute("disabled", true);
+    };
+
 })()
