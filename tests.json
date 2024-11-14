@@ -1,0 +1,23 @@
+[
+    {
+        "type": "input",
+        "question": "Переведіть 𝜋/4 у градуси:",
+        "answer": "45"
+    },
+    {
+        "type": "input",
+        "question": "Переведіть 𝜋/6 у градуси:",
+        "answer": "30"
+    },
+    {
+        "type": "option",
+        "question": "sin(x+2x)",
+        "options": ["sinx*cos2x + sin2x*cosx", "sinx*cosx + sin2x*cos2x", "2*sinx*cosx + sin2x*cosx"],
+        "answer": "sinx*cos2x + sin2x*cosx"
+    },
+    {
+        "type": "input",
+        "question": "Переведіть 𝜋/3 у градуси:",
+        "answer": "60"
+    }
+]
