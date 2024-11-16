@@ -12,12 +12,238 @@
     {
         "type": "option",
         "question": "sin(x+2x)",
-        "options": ["sinx*cos2x + sin2x*cosx", "sinx*cosx + sin2x*cos2x", "2*sinx*cosx + sin2x*cosx"],
+        "options": ["sinx*cosx + sin2x*cos2x", "sinx*cos2x + sin2x*cosx", "2*sinx*cosx + sin2x*cosx"],
         "answer": "sinx*cos2x + sin2x*cosx"
+    },
+    {
+        "type": "option",
+        "question": "sin(x-2x)",
+        "options": ["sinx*cos2x - sin2x*cosx", "sinx*cosx + sin2x*cos2x", "2*sinx*cosx - sin2x*cosx"],
+        "answer": "sinx*cos2x - sin2x*cosx"
+    },
+    {
+        "type": "option",
+        "question": "cos(x+2x)",
+        "options": ["cosx*cos2x + sinx*sin2x", "cos2x*cos2x - sinx*sinx", "cosx*cos2x - sinx*sin2x"],
+        "answer": "cosx*cos2x - sinx*sin2x"
+    },
+    {
+        "type": "option",
+        "question": "cos(x-2x)",
+        "options": ["cosx*cos2x + 2*sinx*sin2x", "cosx*cos2x + sinx*sin2x", "cos2x*cos2x - sinx*sinx"],
+        "answer": "cosx*cos2x + sinx*sin2x"
     },
     {
         "type": "input",
         "question": "Переведіть 𝜋/3 у градуси:",
         "answer": "60"
+    },
+    {
+        "type": "input",
+        "question": "Знайдіть значення виразу: 2*cos0° + 3*sin90°",
+        "answer": "5"
+    },
+    {
+        "type": "input",
+        "question": "Знайдіть значення виразу: 4*tg180° - 2*ctg90°",
+        "answer": "0"
+    },
+    {
+        "type": "input",
+        "question": "Знайдіть значення виразу: sin0° + tg𝜋 - sin(3𝜋/2)",
+        "answer": "1"
+    },
+    {
+        "type": "input",
+        "question": "Знайдіть значення виразу: 6*sin(𝜋/6) - 2*cos(𝜋/3) + tg(𝜋/4) - 7*ctg(𝜋/4)",
+        "answer": "-4"
+    },
+    {
+        "type": "input",
+        "question": "Знайдіть значення виразу: 5*cos𝜋 + 4*cos(3𝜋/2) + 2*cos2𝜋",
+        "answer": "-3"
+    },
+    {
+        "type": "input",
+        "question": "Знайдіть значення виразу: sin(𝜋/3) * tg^2(𝜋/6) * ctg(𝜋/6)",
+        "answer": "0,5"
+    },
+    {
+        "type": "input",
+        "question": "Знайдіть значення виразу при x = 𝜋/6: 2*sinx",
+        "answer": "1"
+    },
+    {
+        "type": "option",
+        "question": "Чи може існувати вираз: cosx = 4/7",
+        "options": ["може", "не може", "складно визначити"],
+        "answer": "може"
+    },
+    {
+        "type": "option",
+        "question": "Чи може існувати вираз: sinx = -(√15)/4",
+        "options": ["може", "не може", "складно визначити"],
+        "answer": "може"
+    },
+    {
+        "type": "option",
+        "question": "Чи може існувати вираз: cosx = 𝜋/3",
+        "options": ["може", "не може", "складно визначити"],
+        "answer": "не може"
+    },
+    {
+        "type": "option",
+        "question": "Чи може існувати вираз: sinx = 9/8",
+        "options": ["може", "не може", "складно визначити"],
+        "answer": "не може"
+    },
+    {
+        "type": "option",
+        "question": "Чи може існувати вираз: tgx = -4",
+        "options": ["може", "не може", "складно визначити"],
+        "answer": "може"
+    },
+    {
+        "type": "option",
+        "question": "Чи може існувати вираз: сtgx = √26",
+        "options": ["може", "не може", "складно визначити"],
+        "answer": "може"
+    },
+    {
+        "type": "option",
+        "question": "sin390°",
+        "options": ["1", "0", "0,5"],
+        "answer": "0,5"
+    },
+    {
+        "type": "option",
+        "question": "ctg405°",
+        "options": ["√3", "1", "-(√2)/2"],
+        "answer": "1"
+    },
+    {
+        "type": "option",
+        "question": "cos(-750°)",
+        "options": ["(√2)/2", "(√3)/2", "0,5"],
+        "answer": "(√3)/2"
+    },
+    {
+        "type": "option",
+        "question": "cos(11𝜋/6)",
+        "options": ["(√3)/2", "1", "√2/2"],
+        "answer": "(√3)/2"
+    },
+    {
+        "type": "option",
+        "question": "tg(-19𝜋/3)",
+        "options": ["(√3)/3", "0", "-√3"],
+        "answer": "-√3"
+    },
+    {
+        "type": "option",
+        "question": "Визначте знак нерівності: cos(𝜋/9) ... cos(4𝜋/9)",
+        "options": [">", "<", "="],
+        "answer": ">"
+    },
+    {
+        "type": "option",
+        "question": "Визначте знак нерівності: sin(5𝜋/9) ... sin(17𝜋/18)",
+        "options": [">", "<", "="],
+        "answer": ">"
+    },
+    {
+        "type": "option",
+        "question": "Визначте знак нерівності: tg(2𝜋/5) ... tg(7𝜋/15)",
+        "options": [">", "<", "="],
+        "answer": "<"
+    },
+    {
+        "type": "option",
+        "question": "Визначте знак нерівності: ctg(𝜋/7) ... ctg(3𝜋/7)",
+        "options": [">", "<", "="],
+        "answer": ">"
+    },
+    {
+        "type": "option",
+        "question": "Визначте знак нерівності: sin78° ... tg78°",
+        "options": [">", "<", "="],
+        "answer": "<"
+    },
+    {
+        "type": "option",
+        "question": "Визначте знак нерівності: sin40° ... ctg20°",
+        "options": [">", "<", "="],
+        "answer": "<"
+    },
+    {
+        "type": "option",
+        "question": "cos^2(x) + sin^2(x) = ",
+        "options": ["1", "-1", "0"],
+        "answer": "1"
+    },
+    {
+        "type": "option",
+        "question": "tgx * ctgx = ",
+        "options": ["0", "1", "-1"],
+        "answer": "1"
+    },
+    {
+        "type": "option",
+        "question": "ctgx + sinx/(1 + cosx) = ",
+        "options": ["1/sinx", "0", "ctgx"],
+        "answer": "1/sinx"
+    },
+    {
+        "type": "option",
+        "question": "(1 - sinx)/cosx - cosx/(1 + sinx) = ",
+        "options": ["cos^2(x)/1 - tgx", "1/cosx", "0"],
+        "answer": "0"
+    },
+    {
+        "type": "option",
+        "question": "cos2x = ",
+        "options": ["2*sinx*cosx", "cos^2(x) - sinx^2(x)", "2*cosx"],
+        "answer": "cos^2(x) - sinx^2(x)"
+    },
+    {
+        "type": "option",
+        "question": "sin2x = ",
+        "options": ["2*sinx", "cos^2(x) - sinx^2(x)", "2*sinx*cosx"],
+        "answer": "2*sinx*cosx"
+    },
+    {
+        "type": "option",
+        "question": "Знайдіть значення виразу: sin(30°+x) - cos(60°+x)",
+        "options": ["sinx*√3", "2*sin2x", "cosx*√3"],
+        "answer": "sinx*√3"
+    },
+    {
+        "type": "option",
+        "question": "Знайдіть значення виразу: sinx*cos4x + cosx*sin4x",
+        "options": ["cos5x", "tg5x", "sin5x"],
+        "answer": "sin5x"
+    },
+    {
+        "type": "option",
+        "question": "Знайдіть значення виразу: sin53°*cos7° - cos53°*sin(-7°)",
+        "options": ["0,5", "(√3)/2", "(√2)/2"],
+        "answer": "(√3)/2"
+    },
+    {
+        "type": "input",
+        "question": "Знайдіть значення виразу: cos(3𝜋/8)*cos(𝜋/8) - sin(3𝜋/8)*sin(𝜋/8)",
+        "answer": "0"
+    },
+    {
+        "type": "option",
+        "question": "sin(𝜋/2 - x) = ",
+        "options": ["+cosx", "-cosx", "+sinx"],
+        "answer": "+cosx"
+    },
+    {
+        "type": "option",
+        "question": "tg(3𝜋/2 - x) = ",
+        "options": ["+tgx", "+ctgx", "-tgx"],
+        "answer": "+ctgx"
     }
 ]
