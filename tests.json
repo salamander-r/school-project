@@ -237,13 +237,73 @@
     {
         "type": "option",
         "question": "sin(𝜋/2 - x) = ",
-        "options": ["+cosx", "-cosx", "+sinx"],
-        "answer": "+cosx"
+        "options": ["cosx", "-cosx", "sinx"],
+        "answer": "cosx"
     },
     {
         "type": "option",
         "question": "tg(3𝜋/2 - x) = ",
-        "options": ["+tgx", "+ctgx", "-tgx"],
-        "answer": "+ctgx"
+        "options": ["tgx", "ctgx", "-tgx"],
+        "answer": "ctgx"
+    },
+    {
+        "type": "option",
+        "question": "sin(𝜋 - x) = ",
+        "options": ["cosx", "sinx", "cos(𝜋 - x)"],
+        "answer": "sinx"
+    },
+    {
+        "type": "option",
+        "question": "cos(-x + 270°) = ",
+        "options": ["-sinx", "sinx", "-cosx"],
+        "answer": "-sinx"
+    },
+    {
+        "type": "option",
+        "question": "cos^2(3𝜋 - x) = ",
+        "options": ["cos^2(x)", "-cos^2(x)", "-sin^2(x)"],
+        "answer": "cos^2(x)"
+    },
+    {
+        "type": "option",
+        "question": "ctg^2(90° + x) = ",
+        "options": ["-tg^2(x)", "-ctg^2(x)", "tg^2(x)"],
+        "answer": "tg^2(x)"
+    },
+    {
+        "type": "option",
+        "question": "cos(5𝜋/9) = ",
+        "options": ["sin(3𝜋/11)", "-sin(𝜋/18)", "-cos(𝜋/7)"],
+        "answer": "-sin(𝜋/18)"
+    },
+    {
+        "type": "option",
+        "question": "sin2x/sinx = ",
+        "options": ["2*cosx", "cosx", "2*sin2x"],
+        "answer": "2*cosx"
+    },
+    {
+        "type": "option",
+        "question": "cos2x + sin^2(x) = ",
+        "options": ["sin2x", "cosx", "cos^2(x)"],
+        "answer": "cos^2(x)"
+    },
+    {
+        "type": "option",
+        "question": "cos^4(𝜋/4 - x) - sin^4(𝜋/4 - x) = ",
+        "options": ["2*sinx", "sin2x", "cos^2(x)"],
+        "answer": "sin2x"
+    },
+    {
+        "type": "option",
+        "question": "sin6x * ctg3x - cos6x = ",
+        "options": ["1", "tg3x", "1/sin3x"],
+        "answer": "1"
+    },
+    {
+        "type": "option",
+        "question": "sin80°/cos40° = ",
+        "options": ["cos40°", "tg40°", "2*sin40°"],
+        "answer": "2*sin40°"
     }
 ]
