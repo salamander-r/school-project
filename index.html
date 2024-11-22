@@ -166,6 +166,7 @@
 </head>
 <body>
     <h1>Тренажер з тригонометрії</h1>
+    <button id="showInfo">Про тренажер</button>
     <button id="showTheory">Теорія</button>
     <button id="showCharts">Графіки</button>
     <button id="showCircle">Одиничне коло</button>
@@ -175,21 +176,48 @@
         Chromium <span id="chrome-version"></span>,
         and Electron <span id="electron-version"></span>.
     </p> -->
+    <div id="info">
+        <br />
+        <b>
+            Інформація про тренажер
+        </b>
+        <br />
+        <p>
+            На вкладці "Теорія" ви можете ознайомитись з теоретичним матеріалом теми.
+        </p>
+        <p>
+            На вкладці "Графіки" можливо ознайомитись з побудовою графіків y=sinx та y=cosx.
+        </p>
+        <p>
+            На вкладці "Одиничне коло" є можливість побачити візуалізацію кутів на одиничному колі.
+            Ви можете задавати абсолютно будь-які кути в градусах. Візуальне зображення кутів має сприяти кращому
+            розумінню одиничного кола. Також на одиничному колі одразу будуються штрихованою лінією проєкції кутів
+            на вісь OX (cosx) та вісь OY (sinx).
+        </p>
+        <p>
+            На вкладці "Тести" вам запропонують виконати тестове завдання з теми "Тригонометрія". 
+            До переліку тестів занесено багато різноманітних завдань з цієї теми.
+        </p>
+    </div>
+
     <div id="theory">
         <br />
         <b>
             Теоретичний зміст
         </b>
         <br />
-        <button id="theory">Enter</button>
+        <p>
+            Теорія та тата
+        </p>
     </div>
 
     <div id="charts">
         <br />
-        <b>Цей розділ присвячений графікам y=sinx/y=cosx.
-            Тут ви можете попрактикуватись з побудовою синусоїда та косинусоїда.
+        <b>
+            Синусоїд та косинусоїд
         </b>
         <br />
+        <br/>
         <input type="string" name="Functions" id="Functions" placeholder="Functions" value="sin" />
         <input type="number" name="x0" id="x0" placeholder="x0" value="0" />
         <input type="number" name="xn" id="xn" placeholder="xn" value="15" />
@@ -203,10 +231,10 @@
     <div id="circle" class="circle-chart-container">
         <br />
         <b>
-            Цей розділ присвячений побудові кутів на одиничному колі.
-            Візуальне зображення кутів сприяє кращому розумінню одиночного кола.
+            Побудова кутів на одиничному колі.
         </b>
         <br />
+        <br/>
         <input type="number" name="angle" id="angle" placeholder="Кут" value="45" />
         <button id="submitCircle">Enter</button>
         <canvas id="myCircle"></canvas>
