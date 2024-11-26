@@ -1,13 +1,83 @@
 [
     {
         "type": "input",
+        "question": "Переведіть 𝜋/6 у градуси:",
+        "answer": "30"
+    },
+    {
+        "type": "input",
         "question": "Переведіть 𝜋/4 у градуси:",
         "answer": "45"
     },
     {
         "type": "input",
-        "question": "Переведіть 𝜋/6 у градуси:",
-        "answer": "30"
+        "question": "Переведіть 𝜋/3 у градуси:",
+        "answer": "60"
+    },
+    {
+        "type": "input",
+        "question": "Переведіть 𝜋/2 у градуси:",
+        "answer": "90"
+    },
+    {
+        "type": "input",
+        "question": "Переведіть 2*𝜋/3 у градуси:",
+        "answer": "120"
+    },
+    {
+        "type": "input",
+        "question": "Переведіть 3*𝜋/4 у градуси:",
+        "answer": "135"
+    },
+    {
+        "type": "input",
+        "question": "Переведіть 5*𝜋/6 у градуси:",
+        "answer": "150"
+    },
+    {
+        "type": "input",
+        "question": "Переведіть 𝜋 у градуси:",
+        "answer": "180"
+    },
+    {
+        "type": "input",
+        "question": "Переведіть 7*𝜋/6 у градуси:",
+        "answer": "210"
+    },
+    {
+        "type": "input",
+        "question": "Переведіть 5*𝜋/4 у градуси:",
+        "answer": "225"
+    },
+    {
+        "type": "input",
+        "question": "Переведіть 4*𝜋/3 у градуси:",
+        "answer": "240"
+    },
+    {
+        "type": "input",
+        "question": "Переведіть 3*𝜋/2 у градуси:",
+        "answer": "270"
+    },
+    {
+        "type": "input",
+        "question": "Переведіть 5*𝜋/3 у градуси:",
+        "answer": "300"
+    },
+    {
+        "type": "input",
+        "question": "Переведіть 7*𝜋/4 у градуси:",
+        "answer": "315"
+    },
+    {
+        "type": "input",
+        "question": "Переведіть 11*𝜋/6 у градуси:",
+        "answer": "330"
+    },
+    {
+        "type": "input",
+        "question": "Переведіть 2*𝜋 у градуси:",
+        "answer": "360"
     },
     {
         "type": "option",
@@ -32,11 +102,6 @@
         "question": "cos(x-2x)",
         "options": ["cosx*cos2x + 2*sinx*sin2x", "cosx*cos2x + sinx*sin2x", "cos2x*cos2x - sinx*sinx"],
         "answer": "cosx*cos2x + sinx*sin2x"
-    },
-    {
-        "type": "input",
-        "question": "Переведіть 𝜋/3 у градуси:",
-        "answer": "60"
     },
     {
         "type": "input",
@@ -305,5 +370,67 @@
         "question": "sin80°/cos40° = ",
         "options": ["cos40°", "tg40°", "2*sin40°"],
         "answer": "2*sin40°"
+    },
+    {
+        "type": "option",
+        "question": "Перетворіть вираз: sinx + siny",
+        "options": ["2*sin((x+y)/2) * cos((x-y)/2)", 
+                    "2*sin((x-y)/2) * cos((x+y)/2)", 
+                    "-2*sin((x-y)/2) * sin((x+y)/2)"],
+        "answer": "2*sin((x+y)/2) * cos((x-y)/2)"
+    },
+    {
+        "type": "option",
+        "question": "Перетворіть вираз: sinx - siny",
+        "options": ["2*sin((x+y)/2) * cos((x-y)/2)", 
+                    "2*sin((x-y)/2) * cos((x+y)/2)", 
+                    "-2*sin((x-y)/2) * sin((x+y)/2)"],
+        "answer": "2*sin((x-y)/2) * cos((x+y)/2)"
+    },
+    {
+        "type": "option",
+        "question": "Перетворіть вираз: cosx + cosy",
+        "options": ["2*sin((x+y)/2) * cos((x-y)/2)", 
+                    "2*sin((x-y)/2) * cos((x+y)/2)", 
+                    "2*cos((x+y)/2) * cos((x-y)/2)"],
+        "answer": "2*cos((x+y)/2) * cos((x-y)/2)"
+    },
+    {
+        "type": "option",
+        "question": "Перетворіть вираз: cosx - cosy",
+        "options": ["2*sin((x+y)/2) * cos((x-y)/2)", 
+                    "2*sin((x-y)/2) * cos((x+y)/2)", 
+                    "-2*sin((x-y)/2) * sin((x+y)/2)"],
+        "answer": "-2*sin((x-y)/2) * sin((x+y)/2)"
+    },
+    {
+        "type": "option",
+        "question": "Перетворіть вираз: sinx * cosy",
+        "options": ["(sin(x-y) + sin(x+y))/2", 
+                    "(cos(x-y) + cos(x+y))/2", 
+                    "(cos(x-y) - cos(x+y))/2"],
+        "answer": "(sin(x-y) + sin(x+y))/2"
+    },
+    {
+        "type": "option",
+        "question": "Перетворіть вираз: cosx * cosy",
+        "options": ["(sin(x-y) + sin(x+y))/2", 
+                    "(cos(x-y) + cos(x+y))/2", 
+                    "(cos(x-y) - cos(x+y))/2"],
+        "answer": "(cos(x-y) + cos(x+y))/2"
+    },
+    {
+        "type": "option",
+        "question": "Перетворіть вираз: sinx * siny",
+        "options": ["(sin(x-y) + sin(x+y))/2", 
+                    "(cos(x-y) + cos(x+y))/2", 
+                    "(cos(x-y) - cos(x+y))/2"],
+        "answer": "(cos(x-y) - cos(x+y))/2"
+    },
+    {
+        "type": "option",
+        "question": "2*cos80° * cos50° + sin140° = ",
+        "options": ["(√3)/2", "(√2)/2", "1"],
+        "answer": "(√3)/2"
     }
 ]
