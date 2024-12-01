@@ -1,4 +1,9 @@
 (function () {
+    const isCurrentTab = () => {
+        const circleSection = document.getElementById('circle');
+        return circleSection.style.display === 'block';
+    }
+
     const ctx = document.getElementById('myCircle').getContext('2d');
     const button = document.getElementById('submitCircle');
     let circleChart = null;
@@ -92,9 +97,10 @@
 
     button.onclick = handleClick;
 
-    // document.onkeypress = (e) => {
-    //     if (e.keyCode === 13) {
-    //         handleClick();
-    //     }
-    // }
+
+    document.addEventListener('keypress', (e) => {
+        if (e.keyCode === 13 && isCurrentTab()) {
+            handleClick();
+        }
+    })
 })()

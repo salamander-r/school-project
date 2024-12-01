@@ -1,4 +1,8 @@
 (function () {
+    const isCurrentTab = () => {
+        const testsSection = document.getElementById('tests');
+        return testsSection.style.display === 'block';
+    }
     fetch('./tests.json').then(response => response.json()).then(tests => {
         const testQuestionSection = document.getElementById("test-question");
         const nextQuestionButton = document.getElementById("next-question");
@@ -35,6 +39,12 @@
                     nextQuestionButton.setAttribute("disabled", true);
                 }
             };
+
+            document.addEventListener('keypress', (e) => {
+                if (e.keyCode === 13 && isCurrentTab()) {
+                    button.onclick();
+                }
+            })
 
             testQuestionSection.append(question);
             testQuestionSection.append(input);
@@ -86,6 +96,12 @@
                     nextQuestionButton.setAttribute("disabled", true);
                 }
             };
+
+            document.addEventListener('keypress', (e) => {
+                if (e.keyCode === 13 && isCurrentTab()) {
+                    button.onclick();
+                }
+            })
 
             fieldSet.append(button);
 

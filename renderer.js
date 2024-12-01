@@ -1,4 +1,9 @@
 (function () {
+    const isCurrentTab = () => {
+        const chartsSection = document.getElementById('charts');
+        return chartsSection.style.display === 'block';
+    }
+    
     const ctx = document.getElementById('myChart');
     const button = document.getElementById('submit');
     let sinChart = null;
@@ -99,9 +104,9 @@
 
     button.onclick = handleClick;
 
-    document.onkeypress = (e) => {
-        if (e.keyCode === 13) {
+    document.addEventListener('keypress', (e) => {
+        if (e.keyCode === 13 && isCurrentTab()) {
             handleClick();
         }
-    }
+    })
 })()
